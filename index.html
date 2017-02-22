@@ -1,1 +1,101 @@
-Coming Soon!
+<!doctype HTML>
+<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+<style>
+* { box-sizing: border-box;}
+body, html {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  font-family: 'Slabo 27px', serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background: url(team-bg.png);
+}
+#hero {
+  background-color: rgb(196,230,187);
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#blurb {
+  color: rgba(0,0,0,.7);
+  font-size: 3rem;
+}
+#logo{
+  max-width: 500px;
+}
+#team{
+  display: flex;
+  justify-content: center;
+}
+.member{
+  width: 250px;
+  background-color: rgb(166,222,201);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin: 2rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.member .photo{
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  position: relative;
+  margin-bottom: 25px;
+}
+.member .photo img{
+  position: absolute;
+  top: 15px;
+  background-color: rgb(196,230,187);
+  border-radius: 75px;
+  width: 150px;
+  height: 150px;
+}
+.member .photo .photo-border{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  border: 9px solid black;
+}
+.member .name{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+footer{
+  text-align: center;
+  color: #bbb;
+}
+</style>
+<body>
+<div id="hero">
+  <img src="logo.png" id="logo"></img>
+  <div id="blurb">Bokay is the shizzle</div>
+</div>
+<div id="team">
+  <div class="member">
+    <div class="photo">
+      <img>
+      <div class="photo-border"></div>
+    </div>
+    <div class="name">Aric Henney</div>
+    <div class="about">This is a blurb about Aric.</div>
+  </div>
+  <div class="member">
+    <div class="photo">
+      <img>
+      <div class="photo-border"></div>
+    </div>
+    <div class="name">Greg Bara</div>
+    <div class="about">This is a blurb about Greg.</div>
+  </div>
+</div>
+<footer>&copy;2017 Bokay</footer>
+</body>
