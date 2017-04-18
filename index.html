@@ -11,28 +11,35 @@ body, html {
 body {
   display: flex;
   flex-direction: column;
-  background: url(team-bg.png);
 }
 #hero {
-  background-color: rgb(196,230,187);
-  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: 9px solid rgba(0,0,0,.2);
+  background-color: white;
+  margin-bottom: -3px;
 }
 #blurb {
   color: rgba(0,0,0,.7);
   font-size: 2rem;
 }
-#logo{
-  max-width: 500px;
-  width: 80%;
+img{
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0,0,0,.2);
 }
 h2{
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  margin-top: 2rem;
+  font-weight: normal;
+  color: #444;
+}
+h3{
+  text-align: center;
+  font-size: 1rem;
   margin: 0;
   padding: 0;
   margin-top: 2rem;
@@ -42,9 +49,9 @@ h2{
 #team{
   display: flex;
   justify-content: center;
+  margin-bottom: 5rem;
 }
 .member{
-  width: 250px;
   background-color: rgb(166,222,201);
   display: flex;
   flex-direction: column;
@@ -91,29 +98,38 @@ footer{
     align-items: center;
   }
 }
+
+input{
+  width: 300px;
+  border: 1px solid #999;
+  padding: .5rem;
+  font-size:1rem;
+}
+input[type=submit]{
+  border: 0;
+  width: auto;
+  box-shadow: 2px 2px 0px rgba(0,0,0,.5);
+  margin-left: 1rem;
+  background-color: white;
+}
 </style>
 <body>
-<div id="hero">
-  <img src="logo.png" id="logo"></img>
-  <div id="blurb">Bokay is the shizzle</div>
-</div>
-<h2>Our Team</h2>
+  <div id="hero">
+    <img src="slide-1.png" id="logo"></img>
+  </div>
+  <div id="hero">
+    <img src="slide-2.png" id="logo"></img>
+  </div>
+  <div id="hero">
+    <img src="slide-3.png" id="logo"></img>
+  </div>
+<h2>Sign Up to get notified when we launch!</h2>
+<h3>We will never share or sell your email address</h3>
 <div id="team">
   <div class="member">
-    <div class="photo">
-      <img>
-      <div class="photo-border"></div>
-    </div>
-    <div class="name">Aric Henney</div>
-    <div class="about">This is a blurb about Aric.</div>
-  </div>
-  <div class="member">
-    <div class="photo">
-      <img>
-      <div class="photo-border"></div>
-    </div>
-    <div class="name">Greg Bara</div>
-    <div class="about">This is a blurb about Greg.</div>
+    <form>
+      <input type="text" placeholder="Email Address"><input type="submit" value="Sign Up">
+    </form>
   </div>
 </div>
 <footer>&copy;2017 Bokay</footer>
